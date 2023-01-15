@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Portfolio | Md Arslan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4630e26cf5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#bottom-container">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi,<br>I'm <span>Arslan</span></h1>
+                <p>A Computer Science Undergrad</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ABOUT -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        I am a First Year Undergrad Student at the University of Petroleum and Energy Studies and have opted for Computer Science Engineering. I am a tech geek and passionate about programming and stuff. I am fascinated by the concept of decentralization hence I am also exploring blockchain. My other interests include singing, playing guitar, and learning about philosophical stuff.
+                    </p>
+
+                    <div>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('info')">Info</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="info">
+                            <ul>
+                                <li><span>Name</span><br>Md Arslan</li>
+                                <li><span>Date of Birth</span><br>15/10/2004</li>
+                                <li><span>Hometown</span><br>Varanasi, (U.P.)</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>X (ICSE)</span><br>2020</li>
+                                <li><span>XII (CBSE)</span><br>2022</li>
+                                <li><span>B.Tech - CSE</span><br>2026</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="certifications">
+                            <ul>
+                                <li><span>Workshop on Cybersecurity by Techfest, IIT Bombay</span><br>2021</li>
+                                <li><span>Workshop on Cryptocurrency by Techfest, IIT Bombay</span><br>2021</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SKILLS -->
+
+    <div id="skills">
+        <div class="container">
+            <h1 class="subtitle">Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Programming</h2>
+                    <p>I started programming when I was in 10th standard. Since then I have become familiar with a lot of programming languages including Java, C, C++, Python, and Javascript.</p>
+                </div>
+                <div>
+                    <i class="fa fa-duotone fa-computer"></i>
+                    <h2>Development</h2>
+                    <p>I have some experience with Frontend Web Development and hence am familiar with HTML, CSS & Bootstrap. I have also done cross-platform app development using flutter. </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-clip"></i>
+                    <h2>Copywriting</h2>
+                    <p>I love writing and this love eventually made me learn the art of persuasive writing. I a self-learned Email & FB Ads copywriter and have done some freelance projects in the same.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- PROJECTS -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">Projects</h1>
+            <div class="projects-list">
+                <div class="project">
+                    <img src="images/project-1.png" alt="">
+                    <div class="layer">
+                        <h3>Portfolio HTML CV</h3>
+                        <p>The very first website I ever made, it's a portfolio website made with only HTML.</p>
+                        <a href="https://github.com/mdarslan7/cv"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project-2.png" alt="">
+                    <div class="layer">
+                        <h3>Tindog</h3>
+                        <p>A website for a hypothetical tinder-like app but for dogs.</p>
+                        <a href="https://github.com/mdarslan7/Tindog"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project-3.png" alt="">
+                    <div class="layer">
+                        <h3>CSS - My site</h3>
+                        <p>A portfolio website made using HTML & CSS.</p>
+                        <a href="https://github.com/mdarslan7/CSS---My-Site"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <div id="bottom-container">
+        <div>
+            <a class="footer-icon" href="https://twitter.com/Md_Arslan7"><i class="fa-brands fa-twitter"></i></a>
+            <a class="footer-icon" href="https://www.linkedin.com/in/md-arslan-8b34a6205/"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="footer-icon" href="https://github.com/mdarslan7"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <p class="copyright">© 2023 Md Arslan. All rights reserved.</p>
+      </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
